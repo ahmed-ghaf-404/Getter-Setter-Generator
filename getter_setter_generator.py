@@ -17,8 +17,7 @@ def generate_click():
         text_box.insert(END, "def get_{0}():\n    return self.{0}\n\n".format(var))
     if setter_var.get():
         text_box.insert(END, "def set_{0}({0}):\n    self.{0} = {0}".format(var))
-    
-    return
+
 
 def clear_text_box():
 	text_box.delete(1.0,END)
